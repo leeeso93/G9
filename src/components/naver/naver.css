@@ -1,0 +1,124 @@
+.ranking_box {
+  position: relative;
+  padding: 49px 0;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ranking_box .list_group {
+  position: relative;
+}
+.ranking_box .list_group:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  bottom: 0;
+  width: 1px;
+  background-color: #f3f5f7;
+}
+.ranking_box .list_group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.ranking_list {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: 0 24px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.ranking_item + .ranking_item {
+  padding-top: 17px;
+}
+.ranking_item .item_box {
+  position: relative;
+  display: block;
+  padding-left: 33px;
+}
+.ranking_item .item_num {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  min-width: 13px;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #000;
+}
+.ranking_item .item_title_wrap {
+  line-height: 23px;
+}
+.ranking_item .item_title {
+  font-size: 15px;
+  color: #000;
+  letter-spacing: -0.5px;
+  vertical-align: top;
+}
+.ranking_item .item_title_sub {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14px;
+  color: #5d6d8a;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+.ranking_item .item_title_sub:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+}
+
+.ranking_box .temporary_error {
+  padding: 149px 0;
+  text-align: center;
+}
+.ranking_box .temporary_error:before {
+  content: '';
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  -webkit-background-size: 44px 44px;
+  background-size: 44px 44px;
+}
+.ranking_box .temporary_error .error_txt {
+  padding-top: 16px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+.ranking_box .noti_box {
+  clear: left;
+  overflow: hidden;
+  padding: 21px 24px 4px;
+}
+.ranking_box .noti_box .opt_box_noti {
+  padding: 14px 0 13px 2px;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  color: #777;
+}
+.ranking_box .noti_box .opt_box_noti:before {
+  content: '';
+  margin: 1px 5px 0 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 229px 600px;
+  -webkit-background-size: 229px 600px;
+  vertical-align: top;
+}
