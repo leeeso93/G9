@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
+import React from 'react';
+import {  Route, BrowserRouter as Router } from 'react-router-dom';
 
 import "@fontsource/roboto"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +9,11 @@ import RRN from './components/rrn/RRN';
 import Naver from "./components/naver/Naver";
 
 function App() {
-
+/**
+ * 지나인 사전과제 
+ * https://gist.github.com/happydeveloper/afa47b62e09928875cf37774415bd99d
+ * 
+ */
 
   return (
     <div className="main">
