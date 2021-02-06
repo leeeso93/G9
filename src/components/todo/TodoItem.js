@@ -1,10 +1,7 @@
-import { Checkbox } from '@material-ui/core';
+// import { Checkbox } from '@material-ui/core';
 
 import React ,{ useState } from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import { MdModeEdit,MdDelete } from 'react-icons/md';
+import {MdCheckBox, MdCheckBoxOutlineBlank , MdModeEdit,MdDelete } from 'react-icons/md';
 import Button from 'react-bootstrap/Button';
 
 
@@ -32,24 +29,25 @@ const handleEdit = (e) => {
 };
 
   return (
-    <ListItem  name="todo" >
-      <div id={todo.id} value={todo.id}  onClick={handleClick} className={todo.complete ? "list-item strike" : "list-item"}>
-        <ListItemIcon> <Checkbox checked={todo.complete} /></ListItemIcon>
-        <span className={view ? 'd-none' : ''}>  {todo.task}</span>
-      </div>
+    <div  className="list-box" >
+      <frameElement className="list-item">
+        <div id={todo.id} value={todo.id}  onClick={handleClick} className={todo.complete ? "float-left strike" : "float-left"} >
+          {todo.complete ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
+          <span className={view ? 'd-none' : ''}>  {todo.task}</span>
+        </div>
 
-      <div className={view ? 'edit-box' : 'd-none'}>
-        <input type="text" value={input} onChange={onChange} className="input"/>
+        <div className={view ? '' : 'd-none'}>
+          <input type="text" value={input} onChange={onChange} className="input"/>
 
-        <Button size="sm"  variant="light" className="mr-1"  onClick={() => editTask(todo.id, input)} >
-          완료
-        </Button>
-        <Button  size="sm" variant="light" onClick={() => setView(false)}>
-          닫기
-        </Button>
-      </div>
-
-      <ListItemSecondaryAction>
+          <Button size="sm"  variant="light" className="mr-1"  onClick={() => editTask(todo.id, input)} >
+            완료
+          </Button>
+          <Button  size="sm" variant="light" onClick={() => setView(false)}>
+            닫기
+          </Button>
+        </div>
+      </frameElement>
+      <div>
           <Button  variant="outline-primary" className="mr-1"onClick={handleEdit}>
           <MdModeEdit />
         </Button>
@@ -58,8 +56,8 @@ const handleEdit = (e) => {
           <MdDelete/>
         </Button>
         
-      </ListItemSecondaryAction>
-</ListItem>
+      </div>
+</div>
 
   );
 };

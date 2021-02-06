@@ -23,13 +23,14 @@ https://gist.github.com/happydeveloper/afa47b62e09928875cf37774415bd99d
 
 > react 용 router
 
-> `npm install react-router-dom`
+`npm install react-router-dom`
 
-### material-ui
+<!-- ### material-ui
 
 https://material-ui.com/getting-started/installation/
 
 `yarn add @material-ui/core`
+ -->
 
 ### react-bootstrap
 
@@ -43,8 +44,12 @@ https://react-icons.github.io/react-icons/icons?name=md
 
 `npm install react-icons --save`
 
-### font roboto
+<!-- ### font roboto
 
-https://www.npmjs.com/package/@fontsource/roboto
+https://www.npmjs.com/package/@fontsource/roboto -->
 
-`yarn add @fontsource/roboto`
+<!-- `yarn add @fontsource/roboto` -->
+
+### axios
+
+`npm install --save axios`

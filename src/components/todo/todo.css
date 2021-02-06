@@ -23,8 +23,16 @@
 .list-section {
   min-height: 5rem;
 }
-.list-item {
+
+.list-box {
+  border-bottom: 1px solid #e2e5e8;
+  padding: 1em;
+  display: flex;
   cursor: pointer;
+}
+
+.list-item {
+  min-width: 80%;
 }
 
 .strike {

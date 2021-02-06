@@ -1,7 +1,7 @@
 import React from 'react';
 import {  Route, BrowserRouter as Router } from 'react-router-dom';
 
-import "@fontsource/roboto"
+// import "@fontsource/roboto";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home';
 import ToDoHome from './components/todo/ToDoHome';
