@@ -31,7 +31,7 @@ const handleEdit = (e) => {
   return (
     <div  className="list-box" >
       <div className="list-item">
-        <div id={todo.id} value={todo.id}  onClick={handleClick} className={todo.complete ? "float-left strike" : "float-left"} >
+        <div id={todo.id} value={todo.id}  onClick={handleClick} className={todo.complete ? "strike" : ""} >
           {todo.complete ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
           <span className={view ? 'd-none' : ''}>  {todo.task}</span>
         </div>
@@ -47,7 +47,7 @@ const handleEdit = (e) => {
           </Button>
         </div>
       </div>
-      <div>
+      <div className="button-wrap">
           <Button  variant="outline-primary" className="mr-1"onClick={handleEdit}>
           <MdModeEdit />
         </Button>

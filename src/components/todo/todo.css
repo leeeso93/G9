@@ -33,6 +33,7 @@
 
 .list-item {
   min-width: 80%;
+  word-break: break-all;
 }
 
 .strike {
@@ -46,4 +47,8 @@
 
 .input {
   border: 1px solid #e2e5e8;
+}
+
+.button-wrap {
+  width: 180px;
 }

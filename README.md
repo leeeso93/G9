@@ -2,9 +2,6 @@
 
 ## 기본설치
 
-> npm install, npm i , yarn add 아무거나 써도 상관없지만 공식문서에 나와있는
-> 설치방법대로 참고함
-
 ### create react app
 
 > react app 생성시

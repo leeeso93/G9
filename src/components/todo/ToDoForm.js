@@ -31,7 +31,8 @@ const ToDoForm = ({ addTask }) => {
               onChange={handleChange} 
               className="mb-2 ml-2 w-100"
               id="inlineFormInput"
-              placeholder="Enter task"
+              placeholder=""
+              maxLength={30} 
             />
           </Col>
           
