@@ -1,6 +1,6 @@
 // import { Checkbox } from '@material-ui/core';
 
-import React ,{ useState } from 'react';
+import React ,{ useState} from 'react';
 import {MdCheckBox, MdCheckBoxOutlineBlank , MdModeEdit,MdDelete } from 'react-icons/md';
 import Button from 'react-bootstrap/Button';
 
@@ -30,7 +30,7 @@ const handleEdit = (e) => {
 
   return (
     <div  className="list-box" >
-      <frameElement className="list-item">
+      <div className="list-item">
         <div id={todo.id} value={todo.id}  onClick={handleClick} className={todo.complete ? "float-left strike" : "float-left"} >
           {todo.complete ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
           <span className={view ? 'd-none' : ''}>  {todo.task}</span>
@@ -46,7 +46,7 @@ const handleEdit = (e) => {
             닫기
           </Button>
         </div>
-      </frameElement>
+      </div>
       <div>
           <Button  variant="outline-primary" className="mr-1"onClick={handleEdit}>
           <MdModeEdit />
