@@ -21,15 +21,15 @@ const ToDoForm = ({ addTask }) => {
 
     return (
         <Form onSubmit={handleSubmit}>
-        <Form.Row className="align-items-center">
-          <Col xs="m-auto auto">
+        <Form.Row className="align-items-center w-100">
+          <Col xs="">
             <Form.Label htmlFor="inlineFormInput" srOnly>
               task
             </Form.Label>
             <Form.Control
               value={userInput}
               onChange={handleChange} 
-              className="m-auto mb-2 w-p100"
+              className="mb-2 ml-2 w-100"
               id="inlineFormInput"
               placeholder="Enter task"
             />
